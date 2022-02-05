@@ -1,0 +1,37 @@
+{
+    "league": "LigaMX",
+    "games": [
+        {
+            "id": 100,
+            "homeName": "Puebla",
+            "homeOdds": 115,
+            "awayName": "Club Tijuana",
+            "awayOdds": 280,
+            "drawOdds": 215
+        },
+        {
+            "id": 101,
+            "homeName": "Club Leon",
+            "homeOdds": 125,
+            "awayName": "Atlas",
+            "awayOdds": 245,
+            "drawOdds": 215
+        },
+        {
+            "id": 102,
+            "homeName": "Club Tijuana",
+            "homeOdds": 150,
+            "awayName": "Pumas UNAM",
+            "awayOdds": 190,
+            "drawOdds": 230
+        },
+        {
+            "id": 103,
+            "homeName": "Santos Laguna",
+            "homeOdds": 105,
+            "awayName": "Necaxa",
+            "awayOdds": 270,
+            "drawOdds": 240
+        }
+    ]
+}
