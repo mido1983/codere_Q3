@@ -22,13 +22,10 @@
 
     function create_preGameView(game){
 
-     var gameHtml =    $("<div>",{class:"container gameWrap"}).append
-        (
-            $("<div>",{class:"row gameTop"}).append
-            (
+     var gameHtml = $("<div>",{class:"row gameTop"}).append(
                 $("<div>",{class:"col-4 logoHome"}).append
                 (
-                    $("<img>",{src:"assets/" + game.homeName.replaceAll(" ","_") + ".png" , class:"img-thumbnail playerLogo"})
+                    $("<img>",{src:"assets/" + game.homeName.replaceAll(" ","_") + ".png" , class:"img-fluid playerLogo"})
                 ),
                 $("<div>",{class:"col-4 players"}).append
                 (
@@ -38,9 +35,9 @@
                 ),
                 $("<div>",{class:"col-4 logoAway"}).append
                 (
-                    $("<img>",{src:"assets/" + game.awayName.replaceAll(" ","_") + ".png" , class:"img-thumbnail playerLogo"})
+                    $("<img>",{src:"assets/" + game.awayName.replaceAll(" ","_") + ".png" , class:"img-fluid playerLogo"})
                 ),
-            ),
+
             $("<div>",{class:"row gameBottom"}).append(
                 $("<div>",{class:"col-4 score" }).append(
                     $("<div>",{ text:game.homeName}),
@@ -55,15 +52,15 @@
                     $("<div>",{ text:"+" +game.awayOdds}),
                 ),
             )
+     )
 
-        )
 
         return gameHtml;
 
     }
 
     function init(){
-        games.games.forEach(element => $("body").append(create_preGameView(element)));
+        games.games.forEach(element => $(".podl").append(create_preGameView(element)));
     }
     init();
 

@@ -4,15 +4,31 @@
 
 body{
     background-image: url("assets/desktop.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
 }
-
+.clearfix{
+    min-height: 12vw;
+}
 .playerLogo{
     border: none;
     background-color: unset;
+    max-width: 35%;
 }
 .players{
-    font-size: 2vw;
+    font-size: 1vw;
     color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+.vs{
+    color: green;
 }
 .players > div{
     display:flex;
@@ -22,15 +38,50 @@ body{
 
 .score{
     background-color: #fff;
-    width: 200px;
-    height:100px;
+    width: 20vw;
+    max-width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius:5px;
     box-shadow: 0px 0px 10px white;
+    flex-direction: column;
+}
+.gameTop{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
 }
 
 .gameBottom{
     justify-content: space-around;
+    margin: 1vw 0 1vw;
+}
+ /*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+    .playerLogo{
+        max-width: 100%;
+    }
+    .players{
+        font-size: unset;
+    }
+    .score{
+        width: auto;
+    }
+    .gameBottom {
+        justify-content: space-around;
+        margin: 3vw 0 3vw;
+        padding: 0;
+    }
+}
+.canvasnone{
+    display: none;
+}
+.canvas{
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0.5;
+
 }
