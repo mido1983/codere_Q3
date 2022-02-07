@@ -25,7 +25,7 @@
      var gameHtml = $("<div>",{class:"row gameTop"}).append(
                 $("<div>",{class:"col-4 logoHome"}).append
                 (
-                    $("<img>",{src:"assets/" + game.homeName.replaceAll(" ","_") + ".png" , class:"img-fluid playerLogo"})
+                    $("<img>",{src:"assets/" + game.homeName.toLowerCase().replaceAll(" ","_") + ".png" , class:"img-fluid playerLogo"})
                 ),
                 $("<div>",{class:"col-4 players"}).append
                 (
@@ -35,7 +35,7 @@
                 ),
                 $("<div>",{class:"col-4 logoAway"}).append
                 (
-                    $("<img>",{src:"assets/" + game.awayName.replaceAll(" ","_") + ".png" , class:"img-fluid playerLogo"})
+                    $("<img>",{src:"assets/" + game.awayName.toLowerCase().replaceAll(" ","_") + ".png" , class:"img-fluid playerLogo"})
                 ),
 
             $("<div>",{class:"row gameBottom"}).append(
